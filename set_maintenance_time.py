@@ -137,6 +137,9 @@ def main():
             start_date = int(time.mktime(time.strptime(sys.argv[1], "%Y-%m-%d %H:%M:%S")))
             period_length_unit = sys.argv[2]
             if period_length_unit == 'min':
+                if int(sys.argv[3]) < 5:
+                    print "Error:Incorrect maintenance period (minimum 5 minutes)"
+                    exit(1)
                 period_length = int(sys.argv[3]) * 60
             elif period_length_unit == "hour":
                 period_length = int(sys.argv[3]) * 3600
@@ -149,7 +152,7 @@ def main():
                 all_ids.append(ids)
             auth_id = get_auth_id_from_zabbix(zabbix_api_url, header, username, password)
             maintenance_info["timeperiods"] = [{
-                "start_date": start_date - 300,
+                "start_date": start_date,
                 "period": period_length
             }]
             maintenance_info[host_or_group] = all_ids
