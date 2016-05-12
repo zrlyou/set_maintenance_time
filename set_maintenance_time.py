@@ -88,7 +88,7 @@ def show_help():
     print 'start_date,the date of string.                  eg: "2016-05-12 14:30:00"'
     print "period_length_unit,value of min, hour or day.   eg: min"
     print "period_length,the param is depend on period_length_unit:"
-    print "min                                       value:(1 - 59)"
+    print "min                                       value:(5 - 59)"
     print "hour                                      value:(1 - 23)"
     print "day                                       value:(1 - 31)"
     print "host_or_group,the host id or group id.Separated by a colon between the host and id,ids separated by commas"
