@@ -35,3 +35,5 @@ Note:the 'hostids' and 'groupids' is the keyword,can not change!
 
 host_or_group is you want to shield host id or group id.
 
+If you have questions, please contact me。email:zrlyouwin@gmail.com
+
