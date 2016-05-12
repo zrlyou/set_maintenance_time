@@ -13,7 +13,7 @@ zabbix_api_url = "http://10.20.108.106/zabbix/api_jsonrpc.php"
 
 # change to your maintenance info
 maintenance_info = {
-        "maintenanceid": 1,     # This is your maintenance id
+        "maintenanceid": 1,     	# This is your maintenance id
         "name": "Temporary Maintenance",     # This is your maintenance name
         "active_till": 1521288300,           # The Validity is 2016/03/17 ~ 2018/03/17
         "active_since": 1458212400
